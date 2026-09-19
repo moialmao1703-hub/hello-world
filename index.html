@@ -1,10 +1,142 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello</title>
-  </head>
-  <body>
-    <h1>Hello, world.</h1>
-    <p>This page was made by Moises Almao.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Artifact | Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #e8a5b3;
+            --bg-color: #fff9fa;
+            --text-color: #2c2c2c;
+            --muted-color: #666;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #f7d6dd;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e8a5b3;
+        }
+
+        .site-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #b86b77;
+            text-decoration: none;
+        }
+
+        .nav-right {
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            color: #b86b77;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .content h2 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #d17b88;
+            margin-bottom: 10px;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-top: 0;
+            color: #2c2c2c;
+            font-weight: 800;
+        }
+
+        .content p {
+            font-size: 1.05rem;
+            color: var(--muted-color);
+            margin-bottom: 30px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background-color: #fce8ec;
+            color: #b86b77;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(232, 165, 179, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                margin: 30px auto;
+            }
+            .content h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="site-title">Moises Almao 🤍</a>
+        <div class="nav-right">Humans × Technology</div>
+    </header>
+
+    <main class="container">
+        <div class="content">
+            <h2>Honors Seminar</h2>
+            <h1>My Human Artifact</h1>
+            <p>Hi! I'm Moises Almao, a Psychology and Behavioral Neuroscience student at FIU. This webpage serves as the home of my Human Artifact as I explore the intersection of human experience, agency, and technology throughout the semester.</p>
+            
+            <div class="tags">
+                <span class="tag">Humanity</span>
+                <span class="tag">Technology</span>
+                <span class="tag">Neuroscience</span>
+                <span class="tag">Cognition</span>
+                <span class="tag">Artificial Intelligence</span>
+                <span class="tag">Agency</span>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <!-- Replace the src link below with your own image or illustration link later -->
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1000&auto=format&fit=crop" alt="Workspace aesthetic">
+        </div>
+    </main>
+
+</body>
 </html>
