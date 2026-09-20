@@ -7,9 +7,9 @@
     <style>
         :root {
             --primary-color: #ffa500;
-            --bg-color: #008000;
-            --text-color: #000000;
-            --muted-color: #555555;
+            --bg-color: #007a00; /* Rich green background */
+            --text-color: #ffffff;
+            --muted-color: #000000; /* Changed paragraph text to black for high contrast */
         }
 
         body {
@@ -22,7 +22,7 @@
         }
 
         header {
-            background-color: #e0f8e0;
+            background-color: #006600;
             padding: 20px 40px;
             display: flex;
             justify-content: space-between;
@@ -33,14 +33,14 @@
         .site-title {
             font-size: 1.1rem;
             font-weight: 600;
-            color: #e69500;
+            color: #ffa500;
             text-decoration: none;
         }
 
         .nav-right {
             font-size: 0.85rem;
             letter-spacing: 1px;
-            color: #000000;
+            color: #ffa500;
             text-transform: uppercase;
             font-weight: 700;
         }
@@ -59,7 +59,7 @@
             font-size: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: #e69500;
+            color: #ffa500;
             margin-bottom: 10px;
         }
 
@@ -67,14 +67,15 @@
             font-size: 3rem;
             line-height: 1.1;
             margin-top: 0;
-            color: #2c2c2c;
+            color: #ffffff;
             font-weight: 800;
         }
 
         .content p {
             font-size: 1.05rem;
-            color: var(--muted-color);
+            color: var(--muted-color); /* Now pure black for readability */
             margin-bottom: 30px;
+            font-weight: 500;
         }
 
         .tags {
@@ -89,13 +90,13 @@
             padding: 8px 16px;
             border-radius: 50px;
             font-size: 0.85rem;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .image-container img {
             width: 100%;
             border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(255, 165, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
         @media (max-width: 768px) {
